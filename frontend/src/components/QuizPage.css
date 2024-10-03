@@ -1,0 +1,211 @@
+.mainbop {
+    background-color: #07553B;
+}
+
+/* Main container for the quiz page */
+.maindiv {
+    background-color: #CED46A !important;
+    /* Light green background */
+    height: 100vh !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Score display heading */
+.scoreH1 {
+    color: #07553B !important;
+    /* Dark green text */
+    font-size: 50px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    padding-top: 150px !important;
+    text-align: center !important;
+}
+
+/* Button container for alignment */
+.btnsmaim {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 70px !important;
+}
+
+/* Container for each quiz */
+.quiz-container {
+    background-color: #CED46A !important;
+    /* Light green background */
+    padding: 20px !important;
+    margin: 20px 0 !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-weight: bold !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0) !important;
+    /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+/* Heading for each quiz */
+.quiz-container h2 {
+    font-size: 1.8rem !important;
+    color: #07553B !important;
+    /* Dark green text */
+    margin-bottom: 15px !important;
+    text-align: center !important;
+}
+
+/* Main quiz heading */
+.QuizH1 {
+    font-size: 50px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    color: #CED46A !important;
+    /* Dark green text */
+    text-align: center !important;
+}
+
+/* Styling for each question */
+.quiz-question {
+    margin-bottom: 15px !important;
+}
+
+.quiz-question h3 {
+    font-size: 1.4rem !important;
+    color: #07553B !important;
+    /* Dark green text */
+}
+
+/* Option styling */
+.quiz-question input[type="radio"] {
+    margin-right: 10px !important;
+}
+
+.quiz-question div {
+    font-size: 1.1rem !important;
+    color: #333 !important;
+    margin: 8px 0 !important;
+}
+
+/* Button styling */
+button {
+    padding: 15px 50px !important;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    color: #07553B !important;
+    /* Light green text */
+    background-color: #CED46A !important;
+    /* Dark green background */
+    border: none !important;
+    border-radius: 5px !important;
+    box-shadow: 1px 0px 3px 2px #07553B;
+    /* Button shadow */
+    margin: 20px 40px 40px 20px !important;
+    transition: box-shadow 0.5s ease, transform 0.5s ease !important;
+}
+
+/* Button hover effect */
+button:hover {
+    color: #CED46A !important;
+    /* Dark green text on hover */
+    background-color: #07553B !important;
+    /* Light green background on hover */
+    box-shadow: 0px 0px 2px 4px #CED46A !important;
+    border-radius: 0px !important;
+}
+
+/* Toast message styling */
+.toast {
+    background-color: #07553B !important;
+    color: #CED46A !important;
+    padding: 15px 30px !important;
+    border-radius: 5px !important;
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    font-size: 1rem !important;
+    animation: fadeInOut 4s ease-in-out forwards !important;
+}
+
+/* Toast animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0 !important;
+        transform: translateY(20px) !important;
+    }
+
+    10%,
+    90% {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+
+    100% {
+        opacity: 0 !important;
+        transform: translateY(20px) !important;
+    }
+}
+
+.checkboxll {
+    background-color: black !important;
+    color: red !important;
+    opacity: 1 !important;
+    transform: translateY(50%) !important;
+    transform: translateX(-30%);
+}
+
+/* Style for the options container */
+.options {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+/* Style for each option wrapper */
+.options div {
+    display: flex;
+    align-items: center;
+    /* Align items vertically */
+    margin: 5px 0;
+    /* Add some space between options */
+}
+
+/* Style for the radio button */
+.checkboxll {
+    margin-right: 10px;
+    /* Space between the radio button and the label */
+    cursor: pointer;
+    width: 20px;
+    /* Adjust size if needed */
+    height: 20px;
+    /* Adjust size if needed */
+}
+
+/* Adjust the label styling to ensure alignment */
+.options div label {
+    margin: 0;
+    /* Remove default margin */
+    line-height: 20px;
+    /* Align with radio button */
+}
+
+@media only screen and (max-width: 320px) {
+    .maindiv {
+        overflow: hidden;
+    }
+
+    .btnsmaim {
+        display: flex !important;
+        justify-content: space-between !important;
+        flex-direction: column;
+        margin-top: 0px !important;
+    }
+
+    .scoreH1 {
+        font-size: 25px !important;
+    }
+}
+
+.Loading {
+    background-color: #CED46A;
+    color: #07553B;
+    font-size: 50px;
+    text-align: center;
+    height: 100vh;
+}

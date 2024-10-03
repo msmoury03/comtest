@@ -1,0 +1,94 @@
+/* Container for the entire login page */
+.login-container {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #CED46A;
+    /* Use the same background color */
+    color: #07553B;
+    /* Text color */
+    gap: 20px;
+}
+
+/* Heading for the form */
+h2 {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: cursive;
+    margin-bottom: 20px;
+    color: #07553B;
+}
+
+/* Input field styling */
+input {
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: 2px solid #07553B;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Password input starts from the right */
+input[type="password"] {
+    transform: translateX(100%);
+}
+
+/* Animate input fields into place */
+input.show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Button styling */
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #CED46A;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #07553B;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 0px 3px 2px #07553B;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+
+
+/* Button hover effect */
+button:hover {
+    background-color: #CED46A;
+    color: #07553B;
+    box-shadow: 0px 0px 2px 4px #07553B;
+    border-radius: 0px;
+}
+
+/* Toast success and error notifications */
+.toast-success {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.toast-error {
+    background-color: #e74c3c;
+    color: white;
+}
+
+@media only screen and (max-width: 320px) {
+    .login-container {
+        overflow: hidden;
+    }
+}

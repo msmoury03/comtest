@@ -1,0 +1,101 @@
+.mainbox {
+    background: #CED46A;
+    min-height: 100vh !important;
+}
+
+/* Main container for the Admin page */
+.admin-page {
+    background-color: #c9d30f !important;
+    min-height: 100vh !important;
+    padding: 20px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    color: #07553B !important;
+    /* Dark green text */
+}
+
+/* Heading */
+h1 {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center !important;
+    color: #07553B !important;
+    /* Dark green text */
+    margin-bottom: 30px !important;
+}
+
+/* Quiz .input_AP container */
+.admin-page div {
+    margin-bottom: 20px !important;
+}
+
+/* Text .input_AP for question and options */
+.input_AP {
+    transform: none;
+    opacity: 1;
+    padding: 10px !important;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    color: #07553B;
+    background-color: #e1e85a;
+}
+
+.input_AP::placeholder {
+    color: #07553B;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px !important;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    color: #07553B !important;
+    /* Light green text */
+    background-color: #e1e85a !important;
+    /* Dark green background */
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease, transform 0.3s ease !important;
+    box-shadow: 1px 0px 3px 2px #07553B;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #CED46A !important;
+    color: #07553B !important;
+    transform: scale(1.05) !important;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Toast message styling */
+.toast {
+    background-color: #07553B !important;
+    color: #CED46A !important;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    font-size: 1rem !important;
+    animation: fadeInOut 4s ease-in-out forwards !important;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Toast fade-in and fade-out animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0 !important;
+        transform: translateY(20px) !important;
+    }
+
+    10%,
+    90% {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+
+    100% {
+        opacity: 0 !important;
+        transform: translateY(20px) !important;
+    }
+}
